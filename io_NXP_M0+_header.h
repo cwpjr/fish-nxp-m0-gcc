@@ -1,0 +1,3025 @@
+
+
+
+
+ // IO_NXP_M0_Plus_81x_Specific_Equates:
+
+.equ PINASSIGN0, 0x4000C000
+.equ PINASSIGN1, 0x4000C004
+.equ PINASSIGN2, 0x4000C008
+.equ PINASSIGN3, 0x4000C00C
+.equ PINASSIGN4, 0x4000C010
+.equ PINASSIGN5, 0x4000C014
+.equ PINASSIGN6, 0x4000C018
+.equ PINASSIGN7, 0x4000C01C
+.equ PINASSIGN8, 0x4000C020
+
+.equ PINENABLE0, 0x4000C1C0
+
+.equ DIR0, 0xA0002000
+.equ PIN0, 0xA0002100
+
+.equ UARTCLKDIV_81x, 0x40048094
+.equ UART0_STAT, 0x40064008
+.equ USART0_RXDAT, 0x40064014
+.equ USART0_TXDAT, 0x4006401C
+.equ UARTFRGDIV, 0x400480F0
+.equ USART0_BRG, 0x40064020
+.equ USART0_CFG, 0x40064000
+
+.equ DEVICE_ID_81x, 0x400483F8
+
+ // IO_NXP_M0_11xx_Generic_Equates:
+
+
+
+
+
+
+
+
+
+.equ SYST_CSR, 0xE000E010
+.equ SYSTICKCSR, SYST_CSR
+
+
+
+
+
+
+.equ SYST_RVR, 0xE000E014
+.equ SYSTICKRVR, SYST_RVR
+
+
+
+.equ SYST_CVR, 0xE000E018
+.equ SYSTICKCVR, SYST_CVR
+
+
+
+.equ SYST_CALIB, 0xE000E01C
+.equ SYSTICKCALVR, SYST_CALIB
+
+
+
+
+
+.equ SETENA0, 0xE000E100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ ISER, 0xE000E100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ CLRENA0, 0xE000E180
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ ICER, 0xE000E180
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ SETPEND0, 0xE000E200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ ISPR, 0xE000E200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ CLRPEND0, 0xE000E280
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ ICPR, 0xE000E280
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ IP0, 0xE000E400
+
+
+
+
+
+.equ IP1, 0xE000E404
+
+
+
+
+
+.equ IP2, 0xE000E408
+
+
+
+
+
+.equ IP3, 0xE000E40C
+
+
+
+
+
+.equ IP4, 0xE000E410
+
+
+
+
+
+.equ IP5, 0xE000E414
+
+
+
+
+
+.equ IP6, 0xE000E418
+
+
+
+
+
+.equ IP7, 0xE000E41C
+
+
+
+
+
+.equ CPUIDBR, 0xE000ED00
+
+
+
+
+
+
+.equ CPUID, 0xE000ED00
+
+
+
+
+
+
+.equ ICSR, 0xE000ED04
+
+
+
+
+
+
+
+
+
+.equ AIRCR, 0xE000ED0C
+
+
+
+
+
+.equ SCR, 0xE000ED10
+
+
+
+
+.equ CCR, 0xE000ED14
+
+
+
+.equ SHPR2, 0xE000ED1C
+
+
+.equ SHPR3, 0xE000ED20
+
+
+
+
+
+
+
+
+
+
+
+.equ SYSMEMREMAP, 0x40048000
+
+
+.equ PRESETCTRL, 0x40048004
+
+
+
+
+.equ SYSPLLCTRL, 0x40048008
+
+
+
+.equ SYSPLLSTAT, 0x4004800C
+
+
+.equ SYSOSCCTRL, 0x40048020
+
+
+
+.equ WDTOSCCTRL, 0x40048024
+
+
+
+.equ IRCCTRL, 0x40048028
+
+
+.equ SYSRSTSTAT, 0x40048030
+.equ SYSRESSTAT, SYSRSTSTAT
+
+
+
+
+
+
+.equ SYSPLLCLKSEL, 0x40048040
+
+
+.equ SYSPLLCLKUEN, 0x40048044
+
+
+.equ MAINCLKSEL, 0x40048070
+
+
+.equ MAINCLKUEN, 0x40048074
+
+
+.equ SYSAHBCLKDIV, 0x40048078
+
+
+.equ SYSAHBCLKCTRL, 0x40048080
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ SSP0CLKDIV, 0x40048094
+
+
+.equ UARTCLKDIV, 0x40048098
+
+
+.equ SSP1CLKDIV, 0x4004809C
+
+
+.equ WDTCLKSEL, 0x400480D0
+
+
+.equ WDTCLKUEN, 0x400480D4
+
+
+.equ WDTCLKDIV, 0x400480D8
+
+
+.equ CLKOUTCLKSEL, 0x400480E0
+
+
+.equ CLKOUTUEN, 0x400480E4
+
+
+.equ CLKOUTDIV, 0x400480E8
+.equ CLKOUTCLKDIV, CLKOUTDIV
+
+
+
+.equ PIOPORCAP0, 0x40048100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ PIOPORCAP1, 0x40048104
+
+
+
+
+
+
+
+
+
+
+
+.equ BODCTRL, 0x40048150
+
+
+
+
+.equ SYSTCKCAL, 0x40048154
+
+
+.equ NMISRC, 0x40048174
+
+
+
+.equ STARTAPRP0, 0x40048200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ STARTERP0, 0x40048204
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ STARTRSRP0CLR, 0x40048208
+
+.equ STARTSRP0, 0x4004820C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ PDSLEEPCFG, 0x40048230
+
+
+
+.equ PDAWAKECFG, 0x40048234
+
+
+
+
+
+
+
+
+
+.equ PDRUNCFG, 0x40048238
+
+
+
+
+
+
+
+
+
+.equ DEVICE_ID, 0x400483F4
+
+
+
+
+
+
+
+
+
+.equ PCON, 0x40038000
+
+
+
+
+.equ GPREG0, 0x40038004
+
+.equ GPREG1, 0x40038008
+
+.equ GPREG2, 0x4003800C
+
+.equ GPREG3, 0x40038010
+
+.equ GPREG4, 0x40038014
+
+
+
+
+
+
+
+
+
+
+
+.equ IOCON_PIO2_6, 0x40044000
+
+
+
+
+
+.equ IOCON_PIO2_0, 0x40044008
+
+
+
+
+
+.equ IOCON_RESET_PIO0_0, 0x4004400C
+
+
+
+
+
+.equ IOCON_PIO0_1, 0x40044010
+
+
+
+
+
+.equ IOCON_PIO1_8, 0x40044014
+
+
+
+
+
+.equ IOCON_PIO0_2, 0x4004401C
+
+
+
+
+
+.equ IOCON_PIO2_7, 0x40044020
+
+
+
+
+
+.equ IOCON_PIO2_8, 0x40044024
+
+
+
+
+
+.equ IOCON_PIO2_1, 0x40044028
+
+
+
+
+
+.equ IOCON_PIO0_3, 0x4004402C
+
+
+
+
+
+.equ IOCON_PIO0_4, 0x40044030
+
+
+
+.equ IOCON_PIO0_5, 0x40044034
+
+
+
+.equ IOCON_PIO1_9, 0x40044038
+
+
+
+
+
+.equ IOCON_PIO3_4, 0x4004403C
+
+
+
+
+
+.equ IOCON_PIO2_4, 0x40044040
+
+
+
+
+
+.equ IOCON_PIO2_5, 0x40044044
+
+
+
+
+
+.equ IOCON_PIO3_5, 0x40044048
+
+
+
+
+
+.equ IOCON_PIO0_6, 0x4004404C
+
+
+
+
+
+.equ IOCON_PIO0_7, 0x40044050
+
+
+
+
+
+.equ IOCON_PIO2_9, 0x40044054
+
+
+
+
+
+.equ IOCON_PIO2_10, 0x40044058
+
+
+
+
+
+.equ IOCON_PIO2_2, 0x4004405C
+
+
+
+
+
+.equ IOCON_PIO0_8, 0x40044060
+
+
+
+
+
+.equ IOCON_PIO0_9, 0x40044064
+
+
+
+
+
+.equ IOCON_SWCLK_PIO0_10, 0x40044068
+
+
+
+
+
+.equ IOCON_PIO1_10, 0x4004406C
+
+
+
+
+
+
+.equ IOCON_PIO2_11, 0x40044070
+
+
+
+
+
+.equ IOCON_R_PIO0_11, 0x40044074
+
+
+
+
+
+
+.equ IOCON_R_PIO1_0, 0x40044078
+
+
+
+
+
+
+.equ IOCON_R_PIO1_1, 0x4004407C
+
+
+
+
+
+
+.equ IOCON_R_PIO1_2, 0x40044080
+
+
+
+
+
+
+.equ IOCON_PIO3_0, 0x40044084
+
+
+
+
+
+.equ IOCON_PIO3_1, 0x40044088
+
+
+
+
+
+.equ IOCON_PIO2_3, 0x4004408C
+
+
+
+
+
+.equ IOCON_SWDIO_PIO1_3, 0x40044090
+
+
+
+
+
+
+.equ IOCON_PIO1_4, 0x40044094
+
+
+
+
+
+
+.equ IOCON_PIO1_11, 0x40044098
+
+
+
+
+
+
+.equ IOCON_PIO3_2, 0x4004409C
+
+
+
+
+
+.equ IOCON_PIO1_5, 0x400440A0
+
+
+
+
+
+.equ IOCON_PIO1_6, 0x400440A4
+
+
+
+
+
+.equ IOCON_PIO1_7, 0x400440A8
+
+
+
+
+
+.equ IOCON_PIO3_3, 0x400440AC
+
+
+
+
+
+.equ IOCON_SCK_LOC, 0x400440B0
+
+
+.equ IOCON_DSR_LOC, 0x400440B4
+
+
+.equ IOCON_DCD_LOC, 0x400440B8
+
+
+.equ IOCON_RI_LOC, 0x400440BC
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0DATA, 0x50003FFC
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0DATA0, 0x50003FFC
+
+
+
+
+
+
+
+
+
+.equ GPIO0DATA1, 0x50003FFD
+
+
+
+
+
+.equ GPIO0DATAL, 0x50003FFC
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0DIR, 0x50008000
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0DIR0, 0x50008000
+
+
+
+
+
+
+
+
+
+.equ GPIO0DIR1, 0x50008001
+
+
+
+
+
+.equ GPIO0DIRL, 0x50008000
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IS, 0x50008004
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IS0, 0x50008004
+
+
+
+
+
+
+
+
+
+.equ GPIO0IS1, 0x50008005
+
+
+
+
+
+.equ GPIO0ISL, 0x50008004
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IBE, 0x50008008
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IBE0, 0x50008008
+
+
+
+
+
+
+
+
+
+.equ GPIO0IBE1, 0x50008009
+
+
+
+
+
+.equ GPIO0IBEL, 0x50008008
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IEV, 0x5000800C
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IEV0, 0x5000800C
+
+
+
+
+
+
+
+
+
+.equ GPIO0IEV1, 0x5000800D
+
+
+
+
+
+.equ GPIO0IEVL, 0x5000800C
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IE, 0x50008010
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IE0, 0x50008010
+
+
+
+
+
+
+
+
+
+.equ GPIO0IE1, 0x50008011
+
+
+
+
+
+.equ GPIO0IEL, 0x50008010
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0RIS, 0x50008014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0RIS0, 0x50008014
+
+
+
+
+
+
+
+
+
+.equ GPIO0RIS1, 0x50008015
+
+
+
+
+
+.equ GPIO0RISL, 0x50008014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0MIS, 0x50008018
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0MIS0, 0x50008018
+
+
+
+
+
+
+
+
+
+.equ GPIO0MIS1, 0x50008019
+
+
+
+
+
+.equ GPIO0MISL, 0x50008018
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO0IC, 0x5000801C
+
+.equ GPIO1DATA, 0x50013FFC
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1DATA0, 0x50013FFC
+
+
+
+
+
+
+
+
+
+.equ GPIO1DATA1, 0x50013FFD
+
+
+
+
+
+.equ GPIO1DATAL, 0x50013FFC
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1DIR, 0x50018000
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1DIR0, 0x50018000
+
+
+
+
+
+
+
+
+
+.equ GPIO1DIR1, 0x50018001
+
+
+
+
+
+.equ GPIO1DIRL, 0x50018000
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IS, 0x50018004
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IS0, 0x50018004
+
+
+
+
+
+
+
+
+
+.equ GPIO1IS1, 0x50018005
+
+
+
+
+
+.equ GPIO1ISL, 0x50018004
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IBE, 0x50018008
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IBE0, 0x50018008
+
+
+
+
+
+
+
+
+
+.equ GPIO1IBE1, 0x50018009
+
+
+
+
+
+.equ GPIO1IBEL, 0x50018008
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IEV, 0x5001800C
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IEV0, 0x5001800C
+
+
+
+
+
+
+
+
+
+.equ GPIO1IEV1, 0x5001800D
+
+
+
+
+
+.equ GPIO1IEVL, 0x5001800C
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IE, 0x50018010
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IE0, 0x50018010
+
+
+
+
+
+
+
+
+
+.equ GPIO1IE1, 0x50018011
+
+
+
+
+
+.equ GPIO1IEL, 0x50018010
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1RIS, 0x50018014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1RIS0, 0x50018014
+
+
+
+
+
+
+
+
+
+.equ GPIO1RIS1, 0x50018015
+
+
+
+
+
+.equ GPIO1RISL, 0x50018014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1MIS, 0x50018018
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1MIS0, 0x50018018
+
+
+
+
+
+
+
+
+
+.equ GPIO1MIS1, 0x50018019
+
+
+
+
+
+.equ GPIO1MISL, 0x50018018
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO1IC, 0x5001801C
+
+.equ GPIO2DATA, 0x50023FFC
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2DATA0, 0x50023FFC
+
+
+
+
+
+
+
+
+
+.equ GPIO2DATA1, 0x50023FFD
+
+
+
+
+
+.equ GPIO2DATAL, 0x50023FFC
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2DIR, 0x50028000
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2DIR0, 0x50028000
+
+
+
+
+
+
+
+
+
+.equ GPIO2DIR1, 0x50028001
+
+
+
+
+
+.equ GPIO2DIRL, 0x50028000
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IS, 0x50028004
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IS0, 0x50028004
+
+
+
+
+
+
+
+
+
+.equ GPIO2IS1, 0x50028005
+
+
+
+
+
+.equ GPIO2ISL, 0x50028004
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IBE, 0x50028008
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IBE0, 0x50028008
+
+
+
+
+
+
+
+
+
+.equ GPIO2IBE1, 0x50028009
+
+
+
+
+
+.equ GPIO2IBEL, 0x50028008
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IEV, 0x5002800C
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IEV0, 0x5002800C
+
+
+
+
+
+
+
+
+
+.equ GPIO2IEV1, 0x5002800D
+
+
+
+
+
+.equ GPIO2IEVL, 0x5002800C
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IE, 0x50028010
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IE0, 0x50028010
+
+
+
+
+
+
+
+
+
+.equ GPIO2IE1, 0x50028011
+
+
+
+
+
+.equ GPIO2IEL, 0x50028010
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2RIS, 0x50028014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2RIS0, 0x50028014
+
+
+
+
+
+
+
+
+
+.equ GPIO2RIS1, 0x50028015
+
+
+
+
+
+.equ GPIO2RISL, 0x50028014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2MIS, 0x50028018
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2MIS0, 0x50028018
+
+
+
+
+
+
+
+
+
+.equ GPIO2MIS1, 0x50028019
+
+
+
+
+
+.equ GPIO2MISL, 0x50028018
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ GPIO2IC, 0x5002801C
+
+.equ GPIO3DATA, 0x50033FFC
+
+
+
+
+
+
+
+.equ GPIO3DATA0, 0x50033FFC
+
+
+
+
+
+
+
+.equ GPIO3DATAL, 0x50033FFC
+
+
+
+
+
+
+
+.equ GPIO3DIR, 0x50038000
+
+
+
+
+
+
+
+.equ GPIO3DIR0, 0x50038000
+
+
+
+
+
+
+
+.equ GPIO3DIRL, 0x50038000
+
+
+
+
+
+
+
+.equ GPIO3IS, 0x50038004
+
+
+
+
+
+
+
+.equ GPIO3IS0, 0x50038004
+
+
+
+
+
+
+
+.equ GPIO3ISL, 0x50038004
+
+
+
+
+
+
+
+.equ GPIO3IBE, 0x50038008
+
+
+
+
+
+
+
+.equ GPIO3IBE0, 0x50038008
+
+
+
+
+
+
+
+.equ GPIO3IBEL, 0x50038008
+
+
+
+
+
+
+
+.equ GPIO3IEV, 0x5003800C
+
+
+
+
+
+
+
+.equ GPIO3IEV0, 0x5003800C
+
+
+
+
+
+
+
+.equ GPIO3IEVL, 0x5003800C
+
+
+
+
+
+
+
+.equ GPIO3IE, 0x50038010
+
+
+
+
+
+
+
+.equ GPIO3IE0, 0x50038010
+
+
+
+
+
+
+
+.equ GPIO3IEL, 0x50038010
+
+
+
+
+
+
+
+.equ GPIO3RIS, 0x50038014
+
+
+
+
+
+
+
+.equ GPIO3RIS0, 0x50038014
+
+
+
+
+
+
+
+.equ GPIO3RISL, 0x50038014
+
+
+
+
+
+
+
+.equ GPIO3MIS, 0x50038018
+
+
+
+
+
+
+
+.equ GPIO3MIS0, 0x50038018
+
+
+
+
+
+
+
+.equ GPIO3MISL, 0x50038018
+
+
+
+
+
+
+
+.equ GPIO3IC, 0x5003801C
+
+
+
+
+
+
+
+
+
+.equ U0RBRTHR, 0x40008000
+
+.equ U0RBR, 0x40008000
+
+.equ U0THR, 0x40008000
+
+.equ U0DLL, 0x40008000
+
+.equ U0DLM, 0x40008004
+
+.equ U0IER, 0x40008004
+
+
+
+
+
+
+.equ U0FCR, 0x40008008
+
+
+
+
+
+.equ U0IIR, 0x40008008
+
+
+
+
+
+
+.equ U0LCR, 0x4000800C
+
+
+
+
+
+
+
+.equ U0MCR, 0x40008010
+
+
+
+
+
+
+.equ U0LSR, 0x40008014
+
+
+
+
+
+
+
+
+
+.equ U0MSR, 0x40008018
+
+
+
+
+
+
+
+
+
+.equ U0SCR, 0x4000801C
+
+.equ U0ACR, 0x40008020
+
+
+
+
+
+
+.equ U0FDR, 0x40008028
+
+
+
+.equ U0TER, 0x40008030
+
+
+.equ U0RS485CTRL, 0x4000804C
+
+
+
+
+
+
+
+.equ U0ADRMATCH, 0x40008050
+
+.equ U0RS485DLY, 0x40008054
+
+
+
+
+
+
+
+
+
+.equ SSP0CR0, 0x40040000
+
+
+
+
+
+
+.equ SSP0CR1, 0x40040004
+
+
+
+
+
+.equ SSP0DR, 0x40040008
+
+
+.equ SSP0SR, 0x4004000C
+
+
+
+
+
+
+.equ SSP0CPSR, 0x40040010
+
+
+.equ SSP0IMSC, 0x40040014
+
+
+
+
+
+.equ SSP0RIS, 0x40040018
+
+
+
+
+
+.equ SSP0MIS, 0x4004001C
+
+
+
+
+
+.equ SSP0ICR, 0x40040020
+
+
+
+
+
+
+
+
+
+
+
+.equ SSP1CR0, 0x40058000
+
+
+
+
+
+
+.equ SSP1CR1, 0x40058004
+
+
+
+
+
+.equ SSP1DR, 0x40058008
+
+
+.equ SSP1SR, 0x4005800C
+
+
+
+
+
+
+.equ SSP1CPSR, 0x40058010
+
+
+.equ SSP1IMSC, 0x40058014
+
+
+
+
+
+.equ SSP1RIS, 0x40058018
+
+
+
+
+
+.equ SSP1MIS, 0x4005801C
+
+
+
+
+
+.equ SSP1ICR, 0x40058020
+
+
+
+
+
+
+
+
+
+
+
+.equ I2C0CONSET, 0x40000000
+
+
+
+
+
+
+.equ I2C0STAT, 0x40000004
+
+
+.equ I2C0DAT, 0x40000008
+
+
+.equ I2C0ADR, 0x4000000C
+
+
+
+.equ I2C0SCLH, 0x40000010
+
+
+.equ I2C0SCLL, 0x40000014
+
+
+.equ I2C0CONCLR, 0x40000018
+
+.equ I2C0MMCTRL, 0x4000001C
+
+
+
+
+.equ I2C0ADR1, 0x40000020
+
+
+
+.equ I2C0ADR2, 0x40000024
+
+
+
+.equ I2C0ADR3, 0x40000028
+
+
+
+.equ I2C0DATABUFFER, 0x4000002C
+
+
+.equ I2C0MASK0, 0x40000030
+
+
+.equ I2C0MASK1, 0x40000034
+
+
+.equ I2C0MASK2, 0x40000038
+
+
+.equ I2C0MASK3, 0x4000003C
+
+
+
+
+
+
+
+
+
+
+.equ TMR16B0IR, 0x4000C000
+
+
+
+
+
+
+.equ TMR16B0TCR, 0x4000C004
+
+
+
+.equ TMR16B0TC, 0x4000C008
+
+.equ TMR16B0PR, 0x4000C00C
+
+.equ TMR16B0PC, 0x4000C010
+
+.equ TMR16B0MCR, 0x4000C014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ TMR16B0MR0, 0x4000C018
+
+.equ TMR16B0MR1, 0x4000C01C
+
+.equ TMR16B0MR2, 0x4000C020
+
+.equ TMR16B0MR3, 0x4000C024
+
+.equ TMR16B0CCR, 0x4000C028
+
+
+
+
+.equ TMR16B0CR0, 0x4000C02C
+
+.equ TMR16B0EMR, 0x4000C03C
+
+
+
+
+
+
+
+
+
+.equ TMR16B0CTCR, 0x4000C070
+
+
+
+.equ TMR16B0PWMC, 0x4000C074
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ TMR16B1IR, 0x40010000
+
+
+
+
+
+
+.equ TMR16B1TCR, 0x40010004
+
+
+
+.equ TMR16B1TC, 0x40010008
+
+.equ TMR16B1PR, 0x4001000C
+
+.equ TMR16B1PC, 0x40010010
+
+.equ TMR16B1MCR, 0x40010014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ TMR16B1MR0, 0x40010018
+
+.equ TMR16B1MR1, 0x4001001C
+
+.equ TMR16B1MR2, 0x40010020
+
+.equ TMR16B1MR3, 0x40010024
+
+.equ TMR16B1CCR, 0x40010028
+
+
+
+
+.equ TMR16B1CR0, 0x4001002C
+
+.equ TMR16B1EMR, 0x4001003C
+
+
+
+
+
+
+
+
+
+.equ TMR16B1CTCR, 0x40010070
+
+
+
+.equ TMR16B1PWMC, 0x40010074
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ TMR32B0IR, 0x40014000
+
+
+
+
+
+
+.equ TMR32B0TCR, 0x40014004
+
+
+
+.equ TMR32B0TC, 0x40014008
+
+.equ TMR32B0PR, 0x4001400C
+
+.equ TMR32B0PC, 0x40014010
+
+.equ TMR32B0MCR, 0x40014014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ TMR32B0MR0, 0x40014018
+
+.equ TMR32B0MR1, 0x4001401C
+
+.equ TMR32B0MR2, 0x40014020
+
+.equ TMR32B0MR3, 0x40014024
+
+.equ TMR32B0CCR, 0x40014028
+
+
+
+
+.equ TMR32B0CR0, 0x4001402C
+
+.equ TMR32B0EMR, 0x4001403C
+
+
+
+
+
+
+
+
+
+.equ TMR32B0CTCR, 0x40014070
+
+
+
+.equ TMR32B0PWMC, 0x40014074
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ TMR32B1IR, 0x40018000
+
+
+
+
+
+
+.equ TMR32B1TCR, 0x40018004
+
+
+
+.equ TMR32B1TC, 0x40018008
+
+.equ TMR32B1PR, 0x4001800C
+
+.equ TMR32B1PC, 0x40018010
+
+.equ TMR32B1MCR, 0x40018014
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ TMR32B1MR0, 0x40018018
+
+.equ TMR32B1MR1, 0x4001801C
+
+.equ TMR32B1MR2, 0x40018020
+
+.equ TMR32B1MR3, 0x40018024
+
+.equ TMR32B1CCR, 0x40018028
+
+
+
+
+.equ TMR32B1CR0, 0x4001802C
+
+.equ TMR32B1EMR, 0x4001803C
+
+
+
+
+
+
+
+
+
+.equ TMR32B1CTCR, 0x40018070
+
+
+
+.equ TMR32B1PWMC, 0x40018074
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ AD0CR, 0x4001C000
+
+
+
+
+
+
+
+.equ AD0GDR, 0x4001C004
+
+
+
+
+
+.equ AD0INTEN, 0x4001C00C
+
+
+
+
+
+
+
+
+
+
+.equ AD0DR0, 0x4001C010
+
+
+
+
+.equ AD0DR1, 0x4001C014
+
+
+
+
+.equ AD0DR2, 0x4001C018
+
+
+
+
+.equ AD0DR3, 0x4001C01C
+
+
+
+
+.equ AD0DR4, 0x4001C020
+
+
+
+
+.equ AD0DR5, 0x4001C024
+
+
+
+
+.equ AD0DR6, 0x4001C028
+
+
+
+
+.equ AD0DR7, 0x4001C02C
+
+
+
+
+.equ AD0STAT, 0x4001C030
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.equ WDMOD, 0x40004000
+
+
+
+
+
+.equ WDTC, 0x40004004
+
+
+.equ WDFEED, 0x40004008
+
+.equ WDTV, 0x4000400C
+
+
+
+
+
+
+
+
+
+
+.equ FLASHCFG, 0x4003C010
+
+
+
+
+
+
+
+
+
+
+.equ FMSSTART, 0x4003C020
+
+
+.equ FMSSTOP, 0x4003C024
+
+
+
+.equ FMSW0, 0x4003C02C
+
+.equ FMSW1, 0x4003C030
+
+.equ FMSW2, 0x4003C034
+
+.equ FMSW3, 0x4003C038
+
+.equ FMSTAT, 0x4003CFE0
+
+
+.equ FMSTATCLR, 0x4003CFE8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
